@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :outfits, only: [:index]
   resources :searches, only: [:new]
+  resources :articles, only: [:new]
 end
