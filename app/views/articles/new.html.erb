@@ -1,3 +1,6 @@
-<h1>
-<a href="/">Add an item</a>
-</h1>
+<%= form_with model: @article do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.submit %>
+<% end %>
