@@ -1,6 +1,9 @@
-<%= form_with model: @article do |form| %>
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-
-  <%= form.submit %>
-<% end %>
+<div class="container">
+  <%= form_with model: @article do |form| %>
+    <div class="form-group form-check">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+    <%= form.submit class: "btn btn-primary"%>
+  <% end %>
+</div>
